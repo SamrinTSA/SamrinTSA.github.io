@@ -152,7 +152,7 @@ button:active{
 	align-items: center;
 }
 .about-container img{
-	height:250px;
+	height:200px;
 	position: relative;
 	z-index: 10;
 	background-color: #ffffff;
