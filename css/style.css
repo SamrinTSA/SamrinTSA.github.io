@@ -429,7 +429,20 @@ footer{
 	border-radius: 10px;
 }
 .about-container img{
-	height: 250px;
+	height: 200px;
+}
+.sec-img{
+	position: relative;
+}
+.sec-img::before{
+	content: "";
+	position: absolute;
+	top: 25px;
+	width: 120px;
+	height: 180px;
+	border: 5px solid #161616;
+	z-index: 2;
+	left: -25px;
 }
 .about-text{
 	width: 400px;
@@ -527,6 +540,9 @@ footer{
 		font-family: fontAwesome;
 		line-height: 30px;
 		z-index: 1;
+		position: absolute;
+		right: 10px;
+		top: 15px;
 	}
 	.toggle.active:before{
 		content: '\f00d';
