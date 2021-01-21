@@ -50,10 +50,19 @@ nav ul li a{
 	font-size: 15px;
 	font-weight:700;
 }
+.image-container{
+	display: flex;
+	align-items: center;
+}
 .logo{
+	width: 90px;
+	/* height: 100%; */
+}
+.logo-text{
 	font-family:RoadTest;
 	color:#000000;
-	font-size: 22px;
+	font-size: 20px;
+	margin: 5px 0 0 20px;
 }
 .active{
 	color:#2d2a2a;
@@ -76,8 +85,9 @@ nav ul li a{
 .text-container p:nth-child(3){
 	font-family: myriad pro regular;
 	color: #403e3e;
-	font-size:30px;
+	font-size:25px;
 	line-height:30px;
+	margin-right: 50px;
 }
  
 .text-container p{
@@ -497,6 +507,10 @@ footer{
 	.toggle{
 		display: block;
 	}
+
+	.text-container p {
+		padding-left: 0;
+	}
 	.text-container p:nth-child(2){
 		line-height: 60px;
 		margin: 0px;
@@ -549,8 +563,11 @@ footer{
 	.toggle.active:before{
 		content: '\f00d';
 		position: fixed;
-		right: 25px;
+		right: 0px;
 		line-height: 0px;
+		top: 40px;
+		height: 44px;
+		width: 44px;
 	}
 	nav.active ul{
 		display: flex !important;
